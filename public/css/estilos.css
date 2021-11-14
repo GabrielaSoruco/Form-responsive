@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    
+    background-color: #E3E9F4;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    height: 60vh;
+    width: 66vw;
+    margin: 20vh 18vw;
+    padding: 3vh 5vw;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 25%;
+    padding-top: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+#title{
+    font-size: 1.4em;
+}
+
+#subtitle{
+    font-size: 1.1;
+    padding-top: 0.3em;
+}
+
+form{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+input{
+    margin-top: 2vh;
+    padding-left: 10px;
+    width: 90%;
+    height: 25%;
+    border-radius: 4px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+
+button{
+    margin-top: 1.5vh;
+    width: 15%;
+    height: 20%;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #CACFD7;
+}
+
+form input:focus{
+    outline: 0;
+    border: 3px solid #CACFD7;
+}
+
+.footer{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 1.8em;
+}
+
+.footer p{
+    font-size: 0.9em;
+    margin-top: 0.6em;
+}
+
+.footer p:hover{
+    color: #A5A7AB;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        height: 64vh;
+        width: 90vw;
+        margin: 18vh 5vw;
+    }
+
+    .header{
+        height: 25%;
+        padding-top: 0.6em;
+        margin-bottom: 0.5em;
+    }
+
+    #title{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #subtitle{
+        font-size: 0.8em;
+        padding-top: 0.5em;
+    }
+
+    form{
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    input{
+        margin-top: 2vh;
+        padding-left: 10px;
+        width: 90%;
+        height: 20%;
+        border-radius: 4px;
+        border: 1px solid rgb(202, 202, 202);
+    }
+    
+    .footer{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 0;
+        padding-right: 1.8em;
+        margin-bottom: 1.8em;
+    }
+
+    .footer p{
+        padding-top: 0;
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        height: 64vh;
+        width: 80vw;
+        margin: 18vh 10vw;
+    }
+
+    .header{
+        height: 25%;
+        padding-top: 0.6em;
+        margin-bottom: 0.5em;
+    }
+
+    #title{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    #subtitle{
+        font-size: 1.2em;
+        padding-top: 0.5em;
+    }
+
+    form{
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    input{
+        margin-top: 2vh;
+        padding-left: 10px;
+        width: 90%;
+        height: 20%;
+        border-radius: 4px;
+        border: 1px solid rgb(202, 202, 202);
+    }
+    button{
+        margin-top: 1.3vh;
+        width: 15%;
+        height: 20%;
+        border: 1px solid #fff;
+        font-size: 14px;
+    }
+    
+    .footer{
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top: 0;
+        padding-right: 1.8em;
+        margin-bottom: 1.8em;
+    }
+
+    .footer p{
+        padding-top: 0;
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+}
